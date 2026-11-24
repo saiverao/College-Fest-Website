@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration | TechFest 2027</title>
+</head>
+<body>
+  <header>
+    <div>
+      <a href="index.html">TECH<span>FEST</span> / 27</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a> |
+        <a href="events.html">Events</a> |
+        <a href="schedule.html">Schedule</a> |
+        <a href="register.html" aria-current="page">Register</a> |
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <hr>
+  </header>
+
+  <main>
+    <h1>Reserve your spot</h1>
+    <p>Complete the form to prepare your festival registration.</p>
+
+    <section>
+      <form id="registration">
+        <fieldset>
+          <legend>Participant details</legend>
+
+          <p>
+            <label for="name">Full name:</label><br>
+            <input id="name" type="text" name="name" required autocomplete="name">
+          </p>
+
+          <p>
+            <label for="email">Email:</label><br>
+            <input id="email" type="email" name="email" required>
+          </p>
+
+          <p>
+            <label for="phone">Phone number:</label><br>
+            <input id="phone" type="tel" name="phone" pattern="[0-9]{10}" title="Enter 10 digits" required>
+          </p>
+
+          <p>
+            <label for="department">Department:</label><br>
+            <select id="department" name="department" required>
+              <option value="">Choose department</option>
+              <option>Computer Science</option>
+              <option>Mechanical Engineering</option>
+              <option>Electronics</option>
+              <option>Data Science</option>
+              <option>Other</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="year">Year of study:</label><br>
+            <select id="year" name="year" required>
+              <option value="">Choose year</option>
+              <option>First</option>
+              <option>Second</option>
+              <option>Third</option>
+              <option>Fourth</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+          <legend>Participation type</legend>
+          <label><input type="radio" name="mode" value="solo" required> Solo</label><br>
+          <label><input type="radio" name="mode" value="team"> Team</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+          <legend>Event preferences</legend>
+          <label><input type="checkbox" name="events" value="Byte Battle" required> Byte Battle</label><br>
+          <label><input type="checkbox" name="events" value="Circuit Quest"> Circuit Quest</label><br>
+          <label><input type="checkbox" name="events" value="Pixel Studio"> Pixel Studio</label><br>
+          <label><input type="checkbox" name="events" value="Startup Arena"> Startup Arena</label><br>
+          <label><input type="checkbox" name="events" value="Tech Trivia"> Tech Trivia</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+          <legend>Additional requirements</legend>
+          <label for="notes">Tell us about any special requirements:</label><br>
+          <textarea id="notes" name="notes" rows="4" cols="40" placeholder="Enter any special requirements here"></textarea>
+        </fieldset>
+
+        <p>
+          <button type="submit">Submit registration</button>
+          <button type="reset">Clear form</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <p>©TechFest 2027 · Horizon Institute of Technology · Patna, Bihar</p>
+  </footer>
+</body>
+</html>

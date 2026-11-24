@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" role="img" aria-labelledby="title description">
+  <title id="title">TechFest microchip graphic</title>
+  <desc id="description">A colorful circuit board and glowing microchip for TechFest 2027.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101d35"/>
+      <stop offset="1" stop-color="#087e83"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="700" height="500" rx="28" fill="url(#bg)"/>
+  <g fill="none" stroke="#5de2d1" stroke-width="5" opacity=".75">
+    <path d="M40 110h150l55 55h110"/>
+    <path d="M40 390h180l45-45h90"/>
+    <path d="M660 105H520l-55 55H355"/>
+    <path d="M660 395H500l-45-45H355"/>
+    <path d="M350 20v85M350 395v85"/>
+  </g>
+  <g fill="#5de2d1">
+    <circle cx="40" cy="110" r="9"/><circle cx="40" cy="390" r="9"/>
+    <circle cx="660" cy="105" r="9"/><circle cx="660" cy="395" r="9"/>
+  </g>
+  <rect x="220" y="150" width="260" height="200" rx="24" fill="#172b46" stroke="#dce7f5" stroke-width="6" filter="url(#glow)"/>
+  <g fill="#f3f6fa" font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="350" y="235" font-size="52" font-weight="900">TECH</text>
+    <text x="350" y="295" font-size="52" font-weight="900" fill="#5de2d1">FEST 27</text>
+  </g>
+</svg>
